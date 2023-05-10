@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-10">
+
+                <h1>Detail Fakultas Akademik</h1>
+
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Keterangan</li>
+                    <li class="list-group-item"><b>Nama Fakultas : </b>{{fakultas.nama_fakultas}}</li>
+                    <li class="list-group-item"><b>Program Studi : </b>{{fakultas.prodi}</li>
+                </ul>
+
+                <a href="{% url 'akademik:index' %}" class="btn btn-primary mt-3">
+                    Kembali
+                </a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
